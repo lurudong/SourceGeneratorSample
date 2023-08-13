@@ -13,6 +13,12 @@ using SourceGeneratorSample;
 Greeting.SayHelloTo("大黄瓜");
 GreetingUsePartialClass.SayHelloTo("大黄瓜18CM");
 GreetingGeneratorAtrribute.SayHiTo("大黄瓜真骚");
+
+var myTuple = new MyTuple<int, int>(1, 2);
+var myTuple2 = new MyTuple<int, int>(1, 2);
+
+
+Console.WriteLine(myTuple == myTuple2);
 Console.ReadLine();
 
 /// <summary>

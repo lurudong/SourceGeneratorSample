@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.Base"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.Partial", "SourceGeneratorSample.Partial\SourceGeneratorSample.Partial.csproj", "{C8ED1591-FD90-43D9-8731-86EB27EE22E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGeneratorSample.UseAttributes", "SourceGeneratorSample.UseAttributes\SourceGeneratorSample.UseAttributes.csproj", "{C5D94EFB-8508-4FD7-941E-AD4BCC9BE374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.UseAttributes", "SourceGeneratorSample.UseAttributes\SourceGeneratorSample.UseAttributes.csproj", "{C5D94EFB-8508-4FD7-941E-AD4BCC9BE374}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGenerator.MyTuple", "SourceGenerator.MyTuple\SourceGenerator.MyTuple.csproj", "{22C90152-E67E-4EA4-B5B5-37762649B0CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C5D94EFB-8508-4FD7-941E-AD4BCC9BE374}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5D94EFB-8508-4FD7-941E-AD4BCC9BE374}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5D94EFB-8508-4FD7-941E-AD4BCC9BE374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C90152-E67E-4EA4-B5B5-37762649B0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C90152-E67E-4EA4-B5B5-37762649B0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C90152-E67E-4EA4-B5B5-37762649B0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C90152-E67E-4EA4-B5B5-37762649B0CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
