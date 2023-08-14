@@ -1,6 +1,7 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using SourceGeneratorSample.Core;
 using System.Linq;
 
 namespace SourceGeneratorSample.Partial
@@ -50,7 +51,7 @@ namespace SourceGeneratorSample.Partial
 }}
 ";
             //生成源码
-            context.AddSource($"{typeName}.g.cs", source);
+            context.AddSource($"{typeName}{SourceGeneratorFileNameShortcut.GreetingGenerator_PartialMethod}", source);
         }
 
         ///<inheritodc/> 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Text;
+using SourceGeneratorSample.Core;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -117,7 +118,7 @@ public readonly struct MyTuple{genericArgs}({ctorArgs}) :
         //使用这个方式格式化代码，免得生成的格式太难看    
         string extensionTextFormatted = CSharpSyntaxTree.ParseText(text, new CSharpParseOptions(LanguageVersion.CSharp10)).GetRoot().NormalizeWhitespace().SyntaxTree.GetText().ToString();
 
-        context.AddSource("MyTuple.g.cs", SourceText.From(extensionTextFormatted, Encoding.UTF8));
+        context.AddSource($"MyTuple{SourceGeneratorFileNameShortcut.MyTupleGenerator}", SourceText.From(extensionTextFormatted, Encoding.UTF8));
 
     }
 

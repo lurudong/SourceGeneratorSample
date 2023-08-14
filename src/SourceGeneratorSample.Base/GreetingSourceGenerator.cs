@@ -1,7 +1,7 @@
 ﻿
 
 using Microsoft.CodeAnalysis;
-
+using SourceGeneratorSample.Core;
 namespace SourceGeneratorSample.Base
 {
 
@@ -22,6 +22,7 @@ namespace SourceGeneratorSample.Base
         /// <param name="context"></param>
         public void Execute(GeneratorExecutionContext context)
         {
+
             // 找到mian方法
             var mainMethod = context.Compilation.GetEntryPoint(context.CancellationToken);
             string source = $@"
@@ -31,7 +32,7 @@ namespace SourceGeneratorSample.Base
 // 启用可空性检查，“可空引用类型的”的单文件启用写法。
 #nullable enable
 [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-[global::System.CodeDom.Compiler.GeneratedCodeAttribute(""{nameof(GreetingSourceGenerator)}"",""1.0"")]
+[global::System.CodeDom.Compiler.GeneratedCodeAttribute(""{nameof(GreetingSourceGenerator)}"",""{SourceGenerator.SourceGeneratorVersion.Value}"")]
 public static  class Greeting
     {{
       public  static  void SayHelloTo(string name) =>
@@ -39,7 +40,7 @@ public static  class Greeting
     }}
 ";
             //生成源码
-            context.AddSource("Greeting.g.cs", source);
+            context.AddSource($"Greeting{SourceGeneratorFileNameShortcut.GreetingGenerator_Basic}", source);
         }
 
         ///<inheritodc/> 
@@ -50,6 +51,10 @@ public static  class Greeting
         public void Initialize(GeneratorInitializationContext context)
         {
 
+            //if (!Debugger.IsAttached)
+            //{
+            //    Debugger.Launch();
+            //}
         }
     }
 

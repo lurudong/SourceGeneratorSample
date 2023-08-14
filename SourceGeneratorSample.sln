@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample", "SourceGeneratorSample\SourceGeneratorSample.csproj", "{89F51663-3216-4A15-951A-400E67A6476A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.Base", "src\SourceGeneratorSample.Base\SourceGeneratorSample.Base.csproj", "{DB5F09D5-925E-450E-907D-E63E9BAEBB3B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.Base", "SourceGeneratorSample.Base\SourceGeneratorSample.Base.csproj", "{DB5F09D5-925E-450E-907D-E63E9BAEBB3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.Partial", "src\SourceGeneratorSample.Partial\SourceGeneratorSample.Partial.csproj", "{C8ED1591-FD90-43D9-8731-86EB27EE22E4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.Partial", "SourceGeneratorSample.Partial\SourceGeneratorSample.Partial.csproj", "{C8ED1591-FD90-43D9-8731-86EB27EE22E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.UseAttributes", "src\SourceGeneratorSample.UseAttributes\SourceGeneratorSample.UseAttributes.csproj", "{C5D94EFB-8508-4FD7-941E-AD4BCC9BE374}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.UseAttributes", "SourceGeneratorSample.UseAttributes\SourceGeneratorSample.UseAttributes.csproj", "{C5D94EFB-8508-4FD7-941E-AD4BCC9BE374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGenerator.MyTuple", "src\SourceGenerator.MyTuple\SourceGenerator.MyTuple.csproj", "{22C90152-E67E-4EA4-B5B5-37762649B0CC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGenerator.MyTuple", "SourceGenerator.MyTuple\SourceGenerator.MyTuple.csproj", "{22C90152-E67E-4EA4-B5B5-37762649B0CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.Core", "src\SourceGeneratorSample.Core\SourceGeneratorSample.Core.csproj", "{EC24B0EF-AF9B-481F-B055-1828D1F872BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample", "src\SourceGeneratorSample\SourceGeneratorSample.csproj", "{45F9388B-3C2A-48CB-AD3F-F59976229F61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{89F51663-3216-4A15-951A-400E67A6476A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89F51663-3216-4A15-951A-400E67A6476A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89F51663-3216-4A15-951A-400E67A6476A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89F51663-3216-4A15-951A-400E67A6476A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DB5F09D5-925E-450E-907D-E63E9BAEBB3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB5F09D5-925E-450E-907D-E63E9BAEBB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB5F09D5-925E-450E-907D-E63E9BAEBB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +37,14 @@ Global
 		{22C90152-E67E-4EA4-B5B5-37762649B0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22C90152-E67E-4EA4-B5B5-37762649B0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22C90152-E67E-4EA4-B5B5-37762649B0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC24B0EF-AF9B-481F-B055-1828D1F872BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC24B0EF-AF9B-481F-B055-1828D1F872BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC24B0EF-AF9B-481F-B055-1828D1F872BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC24B0EF-AF9B-481F-B055-1828D1F872BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F9388B-3C2A-48CB-AD3F-F59976229F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F9388B-3C2A-48CB-AD3F-F59976229F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F9388B-3C2A-48CB-AD3F-F59976229F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F9388B-3C2A-48CB-AD3F-F59976229F61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

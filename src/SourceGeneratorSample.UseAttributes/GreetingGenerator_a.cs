@@ -1,6 +1,7 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using SourceGeneratorSample.Core;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -79,7 +80,7 @@ namespace {namespaceString};
                 //ClassName.Add(classDeclarationSyntax.Identifier.ValueText);
 
 
-                context.AddSource($"{containingType.Name}g.cs", output);
+                context.AddSource($"{containingType.Name}{SourceGeneratorFileNameShortcut.GreetingGenerator_UseAttribute}", output);
             }
 
         }
