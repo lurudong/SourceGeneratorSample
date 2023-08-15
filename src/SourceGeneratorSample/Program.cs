@@ -13,7 +13,9 @@ using SourceGeneratorSample;
 Greeting.SayHelloTo("大黄瓜");
 GreetingUsePartialClass.SayHelloTo("大黄瓜18CM");
 GreetingGeneratorAtrribute.SayHiTo("大黄瓜真骚");
+GreetingUseIncremental.SayHelloTo("大黄瓜真骚");
 
+GreetingUseAttribute_IncrementalGenerator.SayHello("大黄瓜真骚");
 
 var myTuple = new MyTuple<int, int>(1, 2);
 var myTuple2 = new MyTuple<int, int>(1, 2);
@@ -31,3 +33,4 @@ public static partial class GreetingUsePartialClass
 
     public static partial void SayHelloTo(string name);
 }
+
