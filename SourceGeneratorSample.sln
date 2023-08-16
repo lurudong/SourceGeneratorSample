@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.Core"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample", "src\SourceGeneratorSample\SourceGeneratorSample.csproj", "{45F9388B-3C2A-48CB-AD3F-F59976229F61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGeneratorSample.IncrementalGenerator", "src\SourceGeneratorSample.IncrementalGenerator\SourceGeneratorSample.IncrementalGenerator.csproj", "{ECD99DB3-D38E-446A-B6F9-CD8E0F4FF1AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample.IncrementalGenerator", "src\SourceGeneratorSample.IncrementalGenerator\SourceGeneratorSample.IncrementalGenerator.csproj", "{ECD99DB3-D38E-446A-B6F9-CD8E0F4FF1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoDeconstructMethodGenerator", "src\AutoDeconstructMethodGenerator\AutoDeconstructMethodGenerator.csproj", "{80B0D084-75AF-423E-B1D0-B96E1788324B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{ECD99DB3-D38E-446A-B6F9-CD8E0F4FF1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECD99DB3-D38E-446A-B6F9-CD8E0F4FF1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECD99DB3-D38E-446A-B6F9-CD8E0F4FF1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B0D084-75AF-423E-B1D0-B96E1788324B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B0D084-75AF-423E-B1D0-B96E1788324B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B0D084-75AF-423E-B1D0-B96E1788324B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B0D084-75AF-423E-B1D0-B96E1788324B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

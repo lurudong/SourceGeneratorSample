@@ -9,6 +9,7 @@
 //https://learn.microsoft.com/zh-cn/visualstudio/msbuild/common-msbuild-project-items?view=vs-2022#projectreference
 
 using SourceGeneratorSample;
+using SourceGeneratorSample.Model;
 
 Greeting.SayHelloTo("大黄瓜");
 GreetingUsePartialClass.SayHelloTo("大黄瓜18CM");
@@ -20,6 +21,9 @@ GreetingUseAttribute_IncrementalGenerator.SayHello("大黄瓜真骚");
 var myTuple = new MyTuple<int, int>(1, 2);
 var myTuple2 = new MyTuple<int, int>(1, 2);
 
+var color = new Color(255, 255, 255, 255);
+
+var (a, r, g, b) = color;
 
 Console.WriteLine(myTuple == myTuple2);
 Console.ReadLine();

@@ -5,3 +5,4 @@
 [assembly: InternalsVisibleTo("SourceGeneratorSample.UseAttributes")]
 [assembly: InternalsVisibleTo("SourceGeneratorSample.Partial")]
 [assembly: InternalsVisibleTo("SourceGeneratorSample.IncrementalGenerator")]
+[assembly: InternalsVisibleTo("AutoDeconstructMethodGenerator")]

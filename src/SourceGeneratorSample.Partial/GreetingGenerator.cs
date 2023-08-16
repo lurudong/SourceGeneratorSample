@@ -50,6 +50,7 @@ namespace SourceGeneratorSample.Partial
     }}
 }}
 ";
+            //context.Compilation.AddSyntaxTrees(CSharpSyntaxTree.ParseText(source)).AddReferences(null);
             //生成源码
             context.AddSource($"{typeName}{SourceGeneratorFileNameShortcut.GreetingGenerator_PartialMethod}", source);
         }
