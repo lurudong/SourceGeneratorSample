@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<Nullable>enable</Nullable>
 		<LangVersion>preview</LangVersion>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
 	</PropertyGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0' and '$(MSBuildProjectFile)'!='SourceGeneratorSample.Core.csproj' " >
